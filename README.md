@@ -5,7 +5,7 @@
 A simple C++ OpenGL graphics framework with HTML5 Canvas-like API for easy 2D/3D drawing and OBJ model rendering.
 
 <p align="center">
-    <img src="3D_models/low_poly_car.gif" alt="Low Poly Car" height="300">
+    <img src="3d_models/low_poly_car.gif" alt="Low Poly Car" height="300">
     <br>
     <em>Low Poly Car Model Rendering Using Just 2D Projection (no 3D Render)</em>
 </p>
