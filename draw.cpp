@@ -62,6 +62,7 @@ void frame(Graphics& gfx) {
     angle += PI * dt;
 
     gfx.clear(COLOR_BLACK);
+    useOBJModel = false;
 
     std::vector<Point> points;
     std::vector<std::vector<int>> edge_map;
@@ -104,6 +105,7 @@ void frame(Graphics& gfx) {
             {2, 6},
             {3, 7}
         };
+
     }
 
     gfx.setColor(COLOR_CYAN);
@@ -125,6 +127,8 @@ void frame(Graphics& gfx) {
             gfx.line_loop(loop);
         }
     }
+    gfx.triangle(points[0], points[1], points[2]);
+    
 }
 
 void draw(Graphics& gfx, float deltaTime) {

@@ -50,6 +50,7 @@ gfx.triangle(x1, y1, x2, y2, x3, y3); // Triangle vertices
 gfx.point(Point(0.0f, 0.0f));
 gfx.line(p1, p2);
 gfx.line_loop(points); // Connect multiple points in a loop
+gfx.triangle(p1, p2, p3);
 ```
 
   
