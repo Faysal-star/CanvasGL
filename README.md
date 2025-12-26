@@ -26,7 +26,7 @@ GLTF to OBJ converter - [ImageToStl](https://imagetostl.com/convert/file/gltf/to
 
 ##  Features
 
-###  Graphics API (`graphics.h`)
+### 🎨 Graphics API (`graphics.h`)
 
 Simplified drawing functions for OpenGL:
 
@@ -58,20 +58,14 @@ gfx.triangle(p1, p2, p3);
 **Coordinate System:**
 
 -  OpenGL normalized device coordinates: `[-1, 1]` for both X and Y
-
 -  `(0, 0)` is the center of the viewport
-
 -  `+X` is right, `+Y` is up, `+Z` is forward
 
 ---  
 
-###  Color System (`color.h`)
-
-  
+### 🖌️ Color System (`color.h`)
 
 Easy color management with hex-to-float conversion:
-
-  
 
 ```cpp
 // Create custom colors
@@ -88,7 +82,7 @@ COLOR_LIME_GREEN,COLOR_NAVY_BLUE,.....etc
 
 ---  
 
-###  OBJ Model Loader (`objloader.h`)
+### 📦 OBJ Model Loader (`objloader.h`)
 
 Load and render Wavefront OBJ 3D models:
 
@@ -112,13 +106,13 @@ std::vector<std::vector<int>>  faces  =  model.faces; // Face data
 **Current OBJ Format Support (to be extended):**
 
 ```
-v -0.5 0.5 0.25 # Vertex
-vn 0.0 1.0 0.0 # Normal (parsed but not used)
-vt 0.5 0.5 # Texture coordinate (parsed but not used)
-f 1/1/1 2/2/2 3/3/3 # Face (vertex/texture/normal)
-f 1//1 2//2 3//3 # Face (vertex//normal)
-f 1/1 2/2 3/3 # Face (vertex/texture)
-f 1 2 3 # Face (vertex only)
+v -0.5 0.5 0.25      # Vertex
+vn 0.0 1.0 0.0       # Normal (parsed but not used)
+vt 0.5 0.5           # Texture coordinate (parsed but not used)
+f 1/1/1 2/2/2 3/3/3  # Face (vertex/texture/normal)
+f 1//1 2//2 3//3     # Face (vertex//normal)
+f 1/1 2/2 3/3        # Face (vertex/texture)
+f 1 2 3              # Face (vertex only)
 ```
 
 --- 
